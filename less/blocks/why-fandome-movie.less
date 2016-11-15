@@ -1,0 +1,108 @@
+.why-fandome-movie__item {
+  .container();
+
+  text-align: center;
+}
+
+.why-fandome-movie {
+  position: relative;
+
+  &--brain {
+    position: relative;
+
+    padding: 90px 0 0 0;
+
+    z-index: 1;
+  }
+
+  &--brain img {
+    -webkit-animation-name: scalePlus;
+    animation-name: scalePlus;
+  }
+
+  &--gleam {
+    position: absolute;
+    top: 205px;
+
+    width: 100%;
+  }
+
+  &--gleam img {
+    -webkit-animation-name: opacityPlus;
+    animation-name: opacityPlus;
+  }
+
+  &--people {
+    position: absolute;
+    top: 280px;
+
+    width: 100%;
+  }
+
+  &--people img {
+    animation-name: emersionUp;
+  }
+
+  &--city {
+    position: relative;
+
+    padding: 74px 0 0 0;
+  }
+
+  &--city img {
+    animation-name: opacityPlus;
+  }
+
+  &--text1 {
+    position: absolute;
+    top: 447px;
+
+    width: 100%;
+  }
+
+  &--text1 img {
+    animation-name: emersionRight;
+  }
+
+  &--text2 {
+    padding: 45px 0 0 0;
+
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &--text2 img {
+    animation-name: emersionLeft;
+  }
+
+  &--text3 {
+    padding: 52px 0 0 0;
+
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &--text4 {
+    margin-bottom: 0px;
+    padding: 81px 0 0 0;
+
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &--hands {
+    padding: 18px 0 0 0;
+  }
+
+  &--hands img {
+    animation-name: emersionUp;
+  }
+}
+
+.why-fandome-movie__desc {
+  margin: 0 0 3px;
+}

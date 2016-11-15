@@ -1,0 +1,48 @@
+.more-inf {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.more-inf__desc {
+  margin: 24px 0 14px;
+}
+
+.more-inf__span {
+  position: relative;
+
+  display: inline-block;
+
+  border: 11px solid #b2b2b2;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-width: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 18px;
+    right: -11px;
+
+    display: block;
+
+    border: 11px solid #696969;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-width: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -11px;
+
+    display: block;
+
+    border: 11px solid #ffffff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-width: 0;
+  }
+}

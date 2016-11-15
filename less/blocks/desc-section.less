@@ -1,0 +1,90 @@
+.desc-section {
+  .container();
+
+  position: relative;
+
+  margin-top: 13px;
+  padding: 30px 0 36px;
+
+  background-color: #363636;
+
+  text-align: center;
+
+  &::before {
+    content: "1";
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    display: block;
+    width: 44px;
+    padding: 9px 0;
+
+    border: 3px solid #d7d7d7;
+
+    vertical-align: middle;
+
+    color: #d7d7d7;
+    font-size: 18px;
+  }
+
+  &:nth-child(odd) {
+    animation-name: emersionRight;
+  }
+
+  &:nth-child(even) {
+    animation-name: emersionLeft;
+  }
+}
+
+.desc-section__title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.desc-section__list {
+  margin: 50px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.desc-section__item {
+  position: relative;
+
+  display: inline-block;
+  padding: 0 128px 0 0;
+
+  vertical-align: top;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    right: 38px;
+
+    display: block;
+    width: 50px;
+    height: 40px;
+
+    background: url("../img/toright.png") no-repeat;
+  }
+
+  &:last-child {
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.desc-section__desc {
+  width: 140px;
+
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 23px;
+}

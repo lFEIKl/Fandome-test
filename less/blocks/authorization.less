@@ -1,0 +1,61 @@
+.authorization {
+  // padding: 60px 0 0 0;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.authorization__img {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 10px;
+  padding: 25px 0 0 0;
+
+  background-color: #464646;
+}
+
+.authorization__input {
+  display: none;
+}
+
+.authorization__label {
+  position: relative;
+
+  display: inline-block;
+  padding: 0 0 0 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    display: block;
+    width: 28px;
+    height: 7px;
+
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -1px;
+
+    display: block;
+    width: 6px;
+    height: 15px;
+
+    background-color: #959595;
+  }
+}
+
+.authorization__input:checked ~ .authorization__label {
+
+ &::after {
+  left: 23px;
+ }
+}
